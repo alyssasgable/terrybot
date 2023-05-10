@@ -15,8 +15,11 @@ const App = () => {
       </section>
 
       <section className="main">
-        <img className="logo" src={logo} />
-        <h1>terryGPT</h1>
+        <div className="header">
+          <img className="logo" src={logo} />
+          <h1>terryGPT</h1>
+        </div>
+       
         <ul className="feed"></ul>
 
         <div className="bottom-section">
