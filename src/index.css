@@ -5,6 +5,22 @@
   font-family: Open Sans, sans-serif;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h1 {
+  margin: 0px;
+}
+
+.logo {
+  height: 50%;
+  width: 80%;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -105,18 +121,28 @@ input:focus {
   cursor: pointer;
 }
 
-.header {
+.feed {
+  overflow: scroll;
+  width: 90%;
+  padding: 0;
+}
+
+.feed li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  background-color: #444654;
+  width: 90%;
+  padding: 20px;
+  margin: 20px 0;
+  height: auto;
 }
 
-h1 {
-  margin: 0px;
+.feed p {
+  color:rgba(255,255,255, 0.8);
+  font-size: 12px;
+  text-align: left;
 }
 
-.logo {
-  height: 50%;
-  width: 80%;
+.feed p.role {
+  min-width: 100px;
 }
+
