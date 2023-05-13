@@ -42,7 +42,6 @@ const App = () => {
     }
 
     useEffect(() => {
-      console.log(currentTitle, value, message)
 
       if (!currentTitle && value && message) {
         setCurrentTitle(value)
@@ -63,6 +62,7 @@ const App = () => {
           ]
         ))
       }
+        //eslint-disable-next-line
     }, [message, currentTitle])
 
     const currentChat = previousChats.filter(previousChat => previousChat.title === currentTitle)
