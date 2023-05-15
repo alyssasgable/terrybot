@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import {useState, useEffect} from 'react';
+require('dotenv').config() 
 
 const App = () => {
     const [ value, setValue] = useState(null)
@@ -33,6 +34,8 @@ const App = () => {
       
       try {
        const response = await fetch('http://localhost:8000/completions', options)
+      //  const response = await fetch('      terrybotbackend-production.up.railway.app/completions', options)
+
        const data = await response.json()
        setMessage(data.choices[0].message)
 
