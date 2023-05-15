@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import {useState, useEffect} from 'react';
-require('dotenv').config() 
 
 const App = () => {
     const [ value, setValue] = useState(null)
